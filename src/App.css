@@ -1,0 +1,237 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://developer-blogs.nvidia.com/wp-content/uploads/2022/01/AdobeStock_169221286-e1642525416888.jpeg') no-repeat center center fixed;
+    background-size: cover; 
+  }
+  
+  .container {
+    width: 500px;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  .input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #70e6f3;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .cityInput {
+    flex: 1;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    padding: 10px;
+  }
+  
+  .cityInput::placeholder {
+    color: #888;
+  }
+  
+  .search-icon {
+    padding: 10px;
+    height: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .search-icon img {
+    width: 18px;
+    margin-top: 7px;
+  }
+  
+  .search-icon:hover {
+    background-color: #e0f7fa;
+  }
+  
+  .image {
+    text-align: center;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .image img {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .temp,
+  .location,
+  .country {
+    margin-top: 5px;
+    font-size: 35px;
+    color: #333;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .temp {
+    font-weight: 600;
+  }
+  
+  .location {
+    color: #ffbc00;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  
+  .country {
+    color: #888;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .cord {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .cord div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .cord div span {
+    font-size: 14px;
+  }
+  
+  .humidity-percent,
+  .wind-percent,
+  .cord div span:nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    padding-top: 5px;
+  }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .data-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .element {
+    text-align: center;
+  }
+  
+  .text {
+    font-size: 13px;
+    color: #888;
+  }
+  
+  .copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin-top: 20px;
+  }
+  
+  .copyright span {
+    color: #333;
+  }
+  
+  .city-not-found,
+  .loading-message,
+  .error-message {
+    margin-top: 10px;
+    color: #888;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  @media (max-width: 1200px) {
+    .container {
+      width: 500px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 300px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 250px;
+    }
+  
+    .temp,
+    .location,
+    .country {
+      font-size: 28px;
+    }
+  
+    .location {
+      font-size: 32px;
+    }
+  
+    .cord div span,
+    .humidity-percent,
+    .wind-percent {
+      font-size: 16px;
+    }
+  
+    .data-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width: 320px) {
+    .container {
+     width: 200px; 
+    }
+  
+    .temp,
+    .location,
+    .country {
+      font-size: 24px;
+    }
+  }
+  
+  
+  
